@@ -64,3 +64,15 @@ arr.forEach(val => {
     opt.value = val
     document.getElementById('branch').appendChild(opt)
 })
+
+
+// Exercise of callback same in forEach method
+
+const arrValue = [6, -5, 7, -2, 4, 6, -1]
+let result = 0
+arrValue.forEach(sum => {
+   
+    if(sum >= 0){
+       console.log(result += sum)
+    }
+})
