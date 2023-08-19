@@ -53,3 +53,14 @@ for (let i = 0; i < arr.length; i++) {
     select.appendChild(option); // Append the option to the select element
 }
  */
+
+// same Exercise using forEach method
+
+const arr = ['ECE', 'CSE', 'IT', 'EEE', 'MECH', 'CIVIL'];
+
+arr.forEach(val => {
+    const opt = document.createElement('option');
+    opt.textContent = val
+    opt.value = val
+    document.getElementById('branch').appendChild(opt)
+})
