@@ -21,9 +21,17 @@ body{
     padding:1rem;
 }
 
+#wrapper2{
+     border: 3px dotted white;
+     margin: 5px;
+    padding:1rem;
+    
+}
+
 .container span{
     margin-left:10px;
 }
+
 
 #ampm{
     font-size:3rem;
