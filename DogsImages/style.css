@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+#dogImage {
+    width: 400px;
+    height: 50vh;
+    border-radius: 40px;
+}
+
+#dogImage1{
+    width: 400px;
+    height: 50vh;
+    border-radius: 40px;
+}
+
+#dogImage2{
+    width: 400px;
+    height: 50vh;
+    border-radius: 40px;
+}
+
+#container {
+    width: 200px;
+    max-height: 50vh;
+    text-align: center;
+}
+
+#fetchButton {
+    background-color: #3182ce;
+    border-radius: 0.6rem;
+    width: 10rem;
+    font-size: 2rem;
+    margin-left: 5rem ;
+    margin-top: 2rem; /* Add some space between the image and the button */
+}
