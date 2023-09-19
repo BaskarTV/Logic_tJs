@@ -17,4 +17,5 @@ fetButton.addEventListener('click', ()=>{
     .catch(error => {
         console.error('Error fetching dog image', error)
     })
-})
+}
+)
