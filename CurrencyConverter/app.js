@@ -31,6 +31,8 @@ btn.addEventListener('click',()=> {
 
     if(curr1 === curr2){
         document.getElementById('err_msg').innerHTML = 'Choose diffrent countries'
+    }else if(inputVal === ''){
+        document.getElementById('err_msg').innerHTML = 'Please Enter Amount to convert'
     }else{
         convert(curr1,curr2,inputVal)
         document.getElementById('err_msg').innerHTML = ''
