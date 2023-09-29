@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;    
+}
+
+nav{
+    background-color: darksalmon;
+    font-size: 28px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: darkslateblue;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+
+nav a:hover{
+    color: whitesmoke;
+}
+
+.menu-line{
+    height: 3px;
+    width: 20px;
+    background-color: darkslateblue;
+    margin-bottom: 3px;
+}
+
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown-menu li{
+    display: inline-block;
+    position: relative;
+}
+
+@media all and (max-width:640px){
+    nav{
+        flex-direction: column;
+
+    }
+
+    nav li{
+        display: block;
+        padding: 10px 0;
+    }
+    ul{
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+
+    .logo{
+        align-self: flex-start;
+        margin: 10px 0px 0px 30px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+    .showmenu{
+         display: block;
+    }
+}
+
+.dropdown{
+    background-color: darksalmon;
+    color: white;
+    padding: 16px;
+    border: none;
+}
+
+.submenu{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .submenu{
+     display: block;
+     position: absolute;
+     background-color: darksalmon;
+     padding: 10px;
+    
+ }
+
+
+
